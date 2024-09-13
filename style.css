@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --font: "Kanit", sans-serif;
+    --color-calc: #000000;
+    --color-visor: #131313;
+    --color-background: rgba(255, 207, 135, 0.822);
+    --color-shadow: rgb(80, 80, 80);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-background);
+    font-family: var(--font);
+}
+
+.organizar {
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+}
+
+.container {
+    background-color: var(--color-calc);
+    width: 400px;
+    height: 530px;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 6px 6px 1px 0px var(--color-shadow)
+}
+
+.container-visor {
+    background-color: var(--color-visor);
+    height: 150px;
+    border-radius: 15px;
+    color: white;
+    font-size: 2.5rem;
+    text-align: right;
+    padding: 40px 10px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.container-caracteres {
+    margin-top: 10px;
+    height: 68%;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+.container-number {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.container-operators {
+    display: grid;
+    grid-template-columns: 1;
+    width: 30%;
+    gap: 10px; 
+}
+
+.btn {
+    background-color: #13131386;
+    border: none;
+    border-radius: 70px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #131313;
+}
+
+#n0 {
+    grid-column: span 2;
+}
+
+.operadores {
+    color: #067706;
+}
+
+.btn:focus {
+    border: 2px solid #acffb7;
+}
+
+@media (max-width: 730px) {
+    body {
+        background-color: #000000;
+    }
+    .container {
+        height: 100vh;
+        width: 100%;
+        border-radius: 0%;
+        box-shadow: none;
+    }
+}

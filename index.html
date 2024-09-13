@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./calculadora-icon.svg" type="image/x-icon">
+    <title>Calculadora</title>
+</head>
+<body>
+
+    <section class="organizar">
+        <section class="container">
+            <p class="container-visor" id="container-visor"></p>
+            <section class="container-caracteres">
+                <div class="container-number">
+
+                    <button type="button" onclick="limpar()" class="btn operadores" id="opC">C</button>
+                    <button type="button" onclick="voltar()" class="btn operadores"><</button>
+                    <button type="button" onclick="insert('/')" value="/" class="btn operadores" id="op/">/</button>
+                    <button type="button" onclick="insert('7')" class="btn numeros" id="n7">7</button>
+                    <button type="button" onclick="insert('8')" class="btn numeros" id="n8">8</button>
+                    <button type="button" onclick="insert('9')" class="btn numeros" id="n9">9</button>
+                    <button type="button" onclick="insert('4')" class="btn numeros" id="n4">4</button>
+                    <button type="button" onclick="insert('5')" class="btn numeros" id="n5">5</button>
+                    <button type="button" onclick="insert('6')" class="btn numeros" id="n6">6</button>
+                    <button type="button" onclick="insert('1')" class="btn numeros" id="n1">1</button>
+                    <button type="button" onclick="insert('2')" class="btn numeros" id="n2">2</button>
+                    <button type="button" onclick="insert('3')" class="btn numeros" id="n3">3</button>
+                    <button type="button" onclick="insert('0')" class="btn numeros" id="n0">0</button>
+                    <button type="button" onclick="insert('.')" class="btn numeros" id="n.">.</button>
+                </div>
+                <div class="container-operators">
+
+                    <button type="button" onclick="insert('*')" value="*" class="btn operadores" id="op*">X</button>
+                    <button type="button" onclick="insert('-')" value="-" class="btn operadores" id="op-">-</button>
+                    <button type="button" onclick="insert('+')" value="+" class="btn operadores" id="op+">+</button>
+                    <button type="button" onclick="calcular()" value="=" class="btn operadores" id="op=">=</button>
+
+                </div>
+            </section>
+        </section>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
